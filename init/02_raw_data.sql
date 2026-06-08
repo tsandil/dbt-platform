@@ -12,12 +12,12 @@ INSERT INTO raw.products (name, category, price) VALUES
 ('Notebook', 'Stationery', 4.99),
 ('Coffee Mug', 'Kitchen', 12.99);
 
-INSERT INTO raw.orders (customer_id, status, amount, ordered_at) VALUES
-(1, 'completed', 29.99, '2024-01-10'),
-(1, 'completed', 89.99, '2024-01-20'),
-(2, 'pending', 24.99, '2024-02-01'),
-(3, 'completed', 4.99, '2024-02-15'),
-(3, 'shipped', 12.99, '2024-03-01'),
-(4, 'completed', 119.98, '2024-03-10'),
-(5, 'cancelled', 29.99, '2024-03-15');
-
+INSERT INTO raw.orders (customer_id, product_id, status, amount, ordered_at) VALUES
+(1, 1, 'completed', 29.99, '2024-01-10'),
+(1, 2, 'completed', 89.99, '2024-01-20'),
+(2, 3, 'pending',   24.99, '2024-02-01'),
+(3, 4, 'completed',  4.99, '2024-02-15'),
+(3, 5, 'shipped',   12.99, '2024-03-01'),
+(4, 1, 'completed', 29.99, '2024-03-10'),
+(4, 2, 'completed', 89.99, '2024-03-10'),
+(5, 3, 'cancelled', 24.99, '2024-03-15');
