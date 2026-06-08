@@ -8,7 +8,7 @@ with orders as (
 
 final as (
 
-    select 
+    select
         order_id,
         customer_id,
         product_id,
@@ -17,6 +17,7 @@ final as (
         status,
         ordered_at
     from orders
+
 )
 
 select * from final
