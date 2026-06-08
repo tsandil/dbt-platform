@@ -16,7 +16,7 @@ customers as (
 
 products as (
 
-    select
+    select 
         *
     from {{ ref('stg_products') }}
 
@@ -24,7 +24,7 @@ products as (
 
 enriched as (
 
-    select 
+    select
         o.order_id,
         o.status,
         o.amount,
@@ -37,10 +37,10 @@ enriched as (
         p.product_name,
         p.category,
         p.price
-    from orders o
-    left join customers c
+    from orders as o
+    left join customers as c
         on o.customer_id = c.customer_id
-    left join products p
+    left join products as p
         on o.product_id = p.product_id
 
 )

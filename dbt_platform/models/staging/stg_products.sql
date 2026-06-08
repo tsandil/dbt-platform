@@ -7,8 +7,8 @@ with src as (
 ),
 
 renamed as (
-    
-    select 
+
+    select
         id as product_id,
         name as product_name,
         category,
@@ -17,4 +17,4 @@ renamed as (
 
 )
 
-select * from renamed 
+select * from renamed

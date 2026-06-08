@@ -14,7 +14,7 @@ renamed as (
         last_name,
         email,
         created_at
-    from src 
+    from src
 
 )
 

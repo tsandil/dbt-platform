@@ -52,8 +52,6 @@ requests==2.34.2
 rpds-py==2026.5.1
 six==1.17.0
 snowplow-tracker==1.1.0
-sqlfluff==4.2.2
-sqlfluff-templater-dbt==4.2.2
 sqlparse==0.5.5
 tblib==3.2.2
 text-unidecode==1.3

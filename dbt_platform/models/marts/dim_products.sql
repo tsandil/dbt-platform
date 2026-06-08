@@ -1,6 +1,6 @@
 with products as (
 
-    select
+    select 
         *
     from {{ ref('stg_products') }}
 
@@ -8,7 +8,7 @@ with products as (
 
 final as (
 
-    select 
+    select
         product_id,
         product_name,
         category

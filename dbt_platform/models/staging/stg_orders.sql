@@ -1,6 +1,6 @@
 with src as (
-    
-    select
+
+    select 
         *
     from {{ source('raw', 'orders') }}
 

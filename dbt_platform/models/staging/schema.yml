@@ -24,7 +24,8 @@ models:
       - name: status
         data_tests:
           - accepted_values:
-              values: ['completed', 'pending', 'shipped', 'cancelled']
+              arguments:
+                values: ['completed', 'pending', 'shipped', 'cancelled']
 
   - name: stg_products
     description: "Cleaned and renamed products from raw source"
