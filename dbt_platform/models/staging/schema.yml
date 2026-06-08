@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Cleaned and renamed customers from raw source"
+    columns:
+      - name: customer_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "Cleaned and renamed orders from raw source"
+    columns:
+      - name: order_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        data_tests:
+          - not_null
+      - name: status
+        data_tests:
+          - accepted_values:
+              values: ['completed', 'pending', 'shipped', 'cancelled']
+
+  - name: stg_products
+    description: "Cleaned and renamed products from raw source"
+    columns:
+      - name: product_id
+        description: "Primary key"
+        data_tests:
+          - unique
+          - not_null
+          
