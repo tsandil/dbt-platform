@@ -11,6 +11,7 @@ renamed as (
     select
         id as order_id,
         customer_id,
+        product_id,
         status,
         amount,
         ordered_at
